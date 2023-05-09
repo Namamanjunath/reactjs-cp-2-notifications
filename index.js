@@ -1,14 +1,14 @@
-const Notification = (props) => {
-  const { className, iconUrl, message } = props;
-  const containerClassName = `notification-container ${className}`;
-
+const Notification = props => {
+  const {className, iconUrl, message} = props
+  const containerClassName = `notification-container ${className}`
+  
   return (
     <div className={containerClassName}>
       <img className="icon" src={iconUrl} />
       <p className="message">{message}</p>
     </div>
-  );
-};
+  )
+}
 
 const element = (
   <div className="notifications-app-container">
@@ -36,6 +36,6 @@ const element = (
       />
     </div>
   </div>
-);
+)
 
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'))
